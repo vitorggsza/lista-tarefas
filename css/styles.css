@@ -1,0 +1,164 @@
+/* Geral */
+* {
+	font-family: Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 15px;
+}
+
+body {
+	color: #333;
+	background: #f0f0f0;
+}
+
+/* Container principal da página */
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	width: 90%;
+	padding: 2rem 0;
+	margin: 0 auto;
+}
+
+/* Cabeçalho */
+.cabecalho {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	text-align: center;
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+#form {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.box-btn-submit {
+	display: flex;
+	flex-direction: column;
+	gap: .8rem;
+	text-align: center;
+}
+
+#tarefa {
+	font-size: 1rem;
+	color: inherit;
+	padding: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+
+#tarefa:focus {
+	outline: 0;
+}
+
+#msgErroTarefa {
+	display: none;
+	font-size: .9rem;
+	color: #ff0000;
+}
+
+.btn-submit {
+	font-size: 1rem;
+	color: #fff;
+	background: #008000;
+	padding: 1rem;
+	border: 1px solid #008000;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+	opacity: .9;
+}
+
+.btn-submit:hover {
+	opacity: 1;
+}
+
+#containerTarefas {
+	display: flex;
+	justify-content: center;
+	gap: 1.3rem;
+}
+
+.tarefa {
+	display: flex;
+	align-items: center;
+	background: #fff;
+	width: 600px;
+	max-width: 100%;
+	padding: 1.2rem;
+	border-radius: 13px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+	cursor: pointer;
+}
+
+.box-selecao-tarefa {
+	width: 9%;
+}
+
+.bi-check-circle-fill {
+	color: #007700;
+}
+
+.txt-tarefa {
+	width: 82%;
+}
+
+.box-delecao-tarefa {
+	text-align: right;
+	width: 9%;
+}
+
+.bi-trash-fill {
+	color: #aa0000;
+}
+
+/* Rodapé */
+.rodape {
+	text-align: center;
+}
+
+.creditos-dev {
+	font-style: italic;
+}
+
+.link-creditos {
+	text-decoration: none;
+	color: #0077ff;
+}
+
+.link-creditos:hover {
+	text-decoration: underline;
+}
+
+/* Responsividade */
+
+/* Tablets (480px pra cima) */
+@media (min-width: 480px) {
+	html {
+		font-size: initial;
+	}
+
+	.box-selecao-tarefa,
+	.box-delecao-tarefa {
+		width: 7%;
+	}
+
+	.txt-tarefa {
+		width: 86%;
+	}
+}
